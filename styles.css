@@ -1,0 +1,135 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.game-area {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h2 {
+    color: #555;
+}
+
+.answer-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option.correct {
+    background-color: #4caf50;
+}
+
+.option.incorrect {
+    background-color: #f44336;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+.pronunciation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pronunciation-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pronunciation-btn:hover {
+    background-color: #45a049;
+}
+
+#pronunciation-audio {
+    display: none;
+}
+
+.feedback {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#feedback-text {
+    font-weight: bold;
+    color: #333;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#check-btn,
+#next-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+#check-btn:hover,
+#next-btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+footer p {
+    font-size: 14px;
+}

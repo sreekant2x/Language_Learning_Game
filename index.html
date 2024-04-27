@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link a CSS file for styling -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Language Learning Game</h1>
+        </header>
+        <main>
+            <div class="game-area">
+                <div class="question">
+                    <h2>Question</h2>
+                    <p class="question-text">What is the synonym of "exquisite"?</p>
+                </div>
+                <div class="answer-options">
+                    <button class="option">Beautiful</button>
+                    <button class="option">Ugly</button>
+                    <button class="option">Ordinary</button>
+                    <button class="option">Mediocre</button>
+                </div>
+                <div class="pronunciation">
+                    <button id="pronunciation-btn">Listen Pronunciation</button>
+                    <audio id="pronunciation-audio" controls>
+                        <source src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="feedback">
+                    <p id="feedback-text"></p>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="check-btn">Check Answer</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Language Learning Game</p>
+        </footer>
+    </div>
+    <script src="script.js"></script> <!-- You can link a JavaScript file for interactivity -->
+</body>
+</html>
